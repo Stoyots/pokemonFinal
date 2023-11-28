@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Pokemon API</title>
+</head>
+
+<body>
+
+  <header>
+    <img id="logo"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" />
+    <div class="search-bar">
+      <input id="pokemonName" value="" type="text" placeholder="Nom du Pokemon">
+      <button id="search">Rechercher</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="pokemonCardContainer">
+      <div class="pokemonCard">
+        <img id='cardImage' src="" alt="" class="cardImage">
+        <div class="pokemonBox">
+          <div class="pokemonImageContainer">
+            <img id='imagepokemon' src="" alt="" class="pokemonImage">
+          </div>
+          <div class="pokemoninfoContainer">
+            <h1 id="namepokemon" class="pokemonInfo"></h1>
+            <p id="Number" class="pokemonInfo"></p>
+            <p id="weight" class="pokemonInfo"></p>
+            <p id="type" class="pokemonInfo"></p>
+            <p id="height" class="pokemonInfo"></p>
+            <p id="energy" class="pokemonInfo"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <audio id="rickRollAudio" src="rickRoll.mp3" preload="auto"></audio>
+  <img id="rickRollImage" src="https://media.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif" alt="Rick Roll"
+    style="display: none;">
+
+  <script src="testPokemon.js"></script>
+  <script src="rickRoll.js"></script>
+
+</body>
+
+</html>

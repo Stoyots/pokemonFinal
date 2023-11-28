@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="pokemonJeu.css">
+    <title>Pokemon Jeu</title>
+</head>
+
+<body>
+    <img id="logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" />
+    <h1 id="score">Score</h1>
+    <div>
+        <img id='imagepokemon' src="" alt="" />
+        <p id="reponse"></p>
+    </div>
+    <div class="searchbox">
+        <input id="pokemonName" value="" type="text" placeholder="Nom du Pokemon">
+        <button id="search">Soumettre</button>
+
+    </div>
+    <button id="btnAcceuil" onclick="location.href='../Acceuil/Acceuil.html'">Revenir au menu</button>
+    <div id="win">
+        Le pokemon a été ajouté à votre pokedex
+    </div>
+    <div id="loose">
+        Raté
+    </div>
+    <script src="pokemonJeu.js"></script>
+</body>
+
+</html>
