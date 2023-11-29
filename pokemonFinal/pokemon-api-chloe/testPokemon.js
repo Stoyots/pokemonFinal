@@ -71,8 +71,6 @@ const pokemonEnergy = {
 
 function getRandomSpriteURL(pokemonNumber) {
   const versions = {
-    'generation-i': ['red-blue', 'yellow'],
-    'generation-ii': ['crystal', 'gold', 'silver'],
     'generation-iii': ['emerald', 'firered-leafgreen', 'ruby-sapphire'],
     'generation-iv': ['diamond-pearl', 'heartgold-soulsilver', 'platinum'],
     'generation-v': ['black-white'],

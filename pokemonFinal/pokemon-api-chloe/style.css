@@ -184,7 +184,7 @@ main {
   margin: auto;
   flex-direction: column;
   border-radius: 8px;
-  width: 250px;
+  width: 350px;
   height: 100px;
   margin-top: 16rem;
   -webkit-filter: drop-shadow(10px 10px 10px #000000);
@@ -203,7 +203,7 @@ main {
   position: absolute;
   bottom: 120%;
   width: auto;
-  height: 12vh;
+  height: 11vh;
   top: -235%;
   left: 50%;
   transform: translateX(-50%);
