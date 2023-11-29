@@ -69,8 +69,24 @@ const pokemonEnergy = {
   water: 'waterEnergy.png',
 };
 
-function imageEnergy(type) {
-  return pokemonEnergy[type];
+function getRandomSpriteURL(pokemonNumber) {
+  const versions = {
+    'generation-i': ['red-blue', 'yellow'],
+    'generation-ii': ['crystal', 'gold', 'silver'],
+    'generation-iii': ['emerald', 'firered-leafgreen', 'ruby-sapphire'],
+    'generation-iv': ['diamond-pearl', 'heartgold-soulsilver', 'platinum'],
+    'generation-v': ['black-white'],
+    'generation-vi': ['x-y', 'omegaruby-alphasapphire'],
+    'generation-vii': ['ultra-sun-ultra-moon'],
+  };
+
+  const generationKeys = Object.keys(versions);
+  const randomGenerationKey = generationKeys[Math.floor(Math.random() * generationKeys.length)];
+  const randomGeneration = versions[randomGenerationKey];
+
+  const randomVersion = randomGeneration[Math.floor(Math.random() * randomGeneration.length)];
+
+  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/${randomGenerationKey}/${randomVersion}/${pokemonNumber}.png`;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -108,7 +124,8 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch(`https://pokeapi.co/api/v2/pokemon/${frenchData.id}`)
           .then((response) => response.json())
           .then((data) => {
-            image.src = `${data.sprites.other['official-artwork'].front_default}`;
+            const spriteURL = getRandomSpriteURL(data.id);
+            image.src = spriteURL;
             image.alt = `${data.name}`;
             number.textContent = `${data.id}`;
             weight.textContent = `${Math.round(data.weight / 10)} kg`;
@@ -131,10 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let input = document.getElementById("pokemonName");
   input.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
-      imagePokemon()
-      translateType()
-      imageEnergy()
-      getPokemon()
+      getPokemon();
     }
   });
 });
