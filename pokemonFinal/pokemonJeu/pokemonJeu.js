@@ -92,6 +92,4 @@ document.querySelector('#search').addEventListener("click", guessName)
 
 function searchbarClicked() {
     document.getElementById('searchbox').value = '';
-    }
-    
-
+}

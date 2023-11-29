@@ -206,7 +206,7 @@ body {
   50% {
     background-position: 400% 0;
   }
-  
+
   100% {
     background-position: 0 0;
   }
@@ -219,7 +219,7 @@ body {
   height: 50px;
   border: none;
   outline: none;
-  color:#000;
+  color: #000;
   background: #111;
   cursor: pointer;
   position: relative;
@@ -299,10 +299,10 @@ body {
   font-weight: 400;
   letter-spacing: 1px;
   /* text-transform:uppercase; */
-  width:auto;
+  width: auto;
   text-align: justify;
   margin: auto;
-  margin-right:auto;
+  margin-right: auto;
   white-space: nowrap;
   font-family: 'Pokemon Solid', sans-serif;
   text-shadow: 0.2em 0.2em #333;

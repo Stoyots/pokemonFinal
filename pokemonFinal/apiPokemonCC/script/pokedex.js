@@ -5,7 +5,7 @@ let URL = "https://pokeapi.co/api/v2/pokemon/";
 
 
 for (let i = 1; i <= 151; i++) {
-     fetch(URL + i)
+    fetch(URL + i)
         .then((response) => response.json())
         .then(data => pokemon(data))
 }
@@ -19,11 +19,11 @@ function pokemon(data) {
     types = types.join('');
 
     let pokeId = ('00' + data.id).slice(-3);
-console.log(data)
-    
-const div = document.createElement("div")
-div.classList.add("pokemon");
-div.innerHTML = `
+    console.log(data)
+
+    const div = document.createElement("div")
+    div.classList.add("pokemon");
+    div.innerHTML = `
 <p class="pokemon-id-back">#${pokeId}</p>
 <div class="imgPokemon">
 <img src="${data.sprites.other['official-artwork'].front_default}" alt="${data.name}">
@@ -37,13 +37,13 @@ div.innerHTML = `
 ${types}
 </div>
 <div class="pokemonStats">
-<p class="stat">${data.height*10} cm</p>
-<p class="stat">${data.weight/10} kg</p>
+<p class="stat">${data.height * 10} cm</p>
+<p class="stat">${data.weight / 10} kg</p>
 </div>
 </div>
 
 `
-pokemonList.append(div);
+    pokemonList.append(div);
 }
 
 
@@ -60,7 +60,7 @@ headerBtn.forEach(boutton => boutton.addEventListener("click", (event) => {
             .then((response) => response.json())
             .then(data => {
 
-                if(btnId === "allPoke") {
+                if (btnId === "allPoke") {
                     pokemon(data);
                 } else {
                     const types = data.types.map(type => type.type.name);
@@ -84,17 +84,17 @@ headerBtn.forEach(boutton => boutton.addEventListener("click", (event) => {
 //             <img src="${data.sprites.other["official-artwork"].front_default}" alt="${poke.name}">
 //         </div>
 //         <div class="pokemonInfo">
-            // <div class="pokemonContainer">
-            //     <p class="pokemonId">#${pokeId}</p>
-            //     <h2 class="pokemonName">${data.name}</h2>
-            // </div>
-            // <div class="pokemonType">
-            //     ${types}
-            // </div>
-            // <div class="pokemonStats">
-            //     <p class="stat">${data.height*10}cm</p>
-            //     <p class="stat">${data.weight/10}kg</p>
-            // </div>
+// <div class="pokemonContainer">
+//     <p class="pokemonId">#${pokeId}</p>
+//     <h2 class="pokemonName">${data.name}</h2>
+// </div>
+// <div class="pokemonType">
+//     ${types}
+// </div>
+// <div class="pokemonStats">
+//     <p class="stat">${data.height*10}cm</p>
+//     <p class="stat">${data.weight/10}kg</p>
+// </div>
 //         </div>
 //     `;
 //     pokemonList.append(div);
