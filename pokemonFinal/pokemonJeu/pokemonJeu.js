@@ -27,7 +27,7 @@ const getPokemon = (e) => {
                     console.log(nomDuPokemon)
                 }).catch((err) => {
                     e.preventDefault();
-                    alert('Pokemon not found', err);
+                    alert('Pokémon introuvable !', err);
                 });
         })
 }
@@ -67,7 +67,7 @@ function guessName() {
     // on compare ces deux string entre elle
     if (nom === pokemon) {
         blurValue = 14
-        afficherFenetreWin("Le pokemon a été ajouté à votre pokedex !");
+        afficherFenetreWin("Le Pokémon a été ajouté à votre Pokédex !");
         document.getElementById("imagepokemon").style.filter = 'none';
         score++
         document.getElementById("score").textContent = "Score = " + score;
