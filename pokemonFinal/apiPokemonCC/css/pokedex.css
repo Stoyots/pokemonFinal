@@ -61,6 +61,8 @@ header {
     padding-inline: 2rem;
     max-width: 1000px;
     margin: 0 auto;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 .nav-list {

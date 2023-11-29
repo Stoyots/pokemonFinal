@@ -4,15 +4,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5bbf58a6-1e85-4cfe-83fd-02df6f482b45/de8nlib-6bed7b3d-3d7e-4763-bb60-18f5ee0127fd.png/v1/fill/w_1024,h_652,q_80,strp/background_prairie_pokemon_screencapture_by_nemotrex_de8nlib-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjUyIiwicGF0aCI6IlwvZlwvNWJiZjU4YTYtMWU4NS00Y2ZlLTgzZmQtMDJkZjZmNDgyYjQ1XC9kZThubGliLTZiZWQ3YjNkLTNkN2UtNDc2My1iYjYwLTE4ZjVlZTAxMjdmZC5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ZVgNGi61AOkC068E-wphWmAUW8amj0MiJySqDcMCVh8);
+    background-image: url(https://wallpapers.com/images/high/epic-pokemon-adventure-in-the-wild-yf5odhgkds0n53yl.webp);
     background-size: cover;
     margin: 0;
     padding: 10px;
 }
 
-
-#btnAcceuil {
-    width: 200px;
+#btnAccueil {
+    width: 150px;
     height: 50px;
     border: none;
     outline: none;
@@ -22,11 +21,12 @@ body {
     position: relative;
     z-index: 0;
     border-radius: 10px;
-    margin-bottom: 15%;
-
+    margin-bottom: 5rem;
+    -webkit-filter: drop-shadow(10px 10px 10px #000000);
+    filter: drop-shadow(10px 10px 10px #000000);
 }
 
-#btnAcceuil:before {
+#btnAccueil:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -43,19 +43,19 @@ body {
     border-radius: 10px;
 }
 
-#btnAcceuil:active {
+#btnAccueil:active {
     color: #000
 }
 
-#btnAcceuil:active:after {
+#btnAccueil:active:after {
     background: transparent;
 }
 
-#btnAcceuil:hover:before {
+#btnAccueil:hover:before {
     opacity: 1;
 }
 
-#btnAcceuil:after {
+#btnAccueil:after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -91,12 +91,34 @@ body {
     align-items: center;
     margin-bottom: 10px;
     transition: 0.8s;
-    border-radius: 30px;
-    padding: 10px 20px;
+    -webkit-filter: drop-shadow(10px 10px 10px #000000);
+    filter: drop-shadow(10px 10px 10px #000000);
 }
 
+.searchbox input {
+    border: 0;
+    outline: none;
+    height: 36px;
+    padding: 4px 16px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: 1px solid #ccc;
+    color: #000;
+  }
+  
+.searchbox button {
+    border: 0;
+    height: 44px;
+    padding: 4px 16px;
+    background-color: white;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+  }
+
 .searchbox #search {
-    color: rgb(38, 45, 245);
+    color: rgb(0, 0, 0);
 }
 
 @keyframes hoverShake {
@@ -129,8 +151,10 @@ a {
 
 #logo {
     margin-top: 1rem;
-    width: 15vw;
+    width: 15rem;
     height: auto;
+    -webkit-filter: drop-shadow(10px 10px 10px #000000);
+    filter: drop-shadow(10px 10px 10px #000000);
 }
 
 #logo:hover {
@@ -188,8 +212,10 @@ a {
 }
 
 #imagepokemon {
+    height: 50vh;
     cursor: crosshair;
     filter: blur(12px) saturate(0);
+    margin-top: -5vh;
 }
 
 #win {
@@ -219,15 +245,73 @@ a {
 }
 
 #score {
-    text-decoration: underline;
     display: flex;
     align-items: center;
-    padding: 10px;
-    font-family: 'Arial', sans-serif;
-    color: rgb(0, 0, 0);
+    padding: 1px;
+    color: rgb(255, 213, 0);
+    margin-bottom: 5vh;
+    margin-top: -2vh;
+    font-family: 'Pokemon Solid', sans-serif;
+    text-shadow: 0.2em 0.2em #333;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 89, 255, 0.875);
+}
+
+#score:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
 
 #reponse {
     opacity: 0;
-    margin-top: -10px;
+    margin-top: -7vh;
 }

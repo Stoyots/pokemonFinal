@@ -11,9 +11,12 @@ body {
 }
 
 #logo {
-  margin-top: 1rem;
-  width: 20vw;
+  margin-top: 5rem;
+  width: 20rem;
   height: auto;
+  border-radius: 45px;
+  -webkit-filter: drop-shadow(10px 10px 10px #000000);
+  filter: drop-shadow(10px 10px 10px #000000);
 }
 
 #logo:hover {
@@ -67,76 +70,6 @@ body {
   }
 }
 
-/* BOUTON JEU */
-
-#btnJeu {
-  width: 220px;
-  height: 50px;
-  border: none;
-  outline: none;
-  color:#000;
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  margin-right: 3%;
-}
-
-#btnJeu:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
-}
-
-#btnJeu:active {
-  color: #000
-}
-
-#btnJeu:active:after {
-  background: transparent;
-}
-
-#btnJeu:hover:before {
-  opacity: 1;
-}
-
-#btnJeu:after {
-  z-index: -1;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #dbd9d9;
-  left: 0px;
-  top: 0;
-  border-radius: 10px;
-}
-
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-
-  50% {
-    background-position: 400% 0;
-  }
-
-  100% {
-    background-position: 0 0;
-  }
-}
 
 /* BOUTON POKEDEX */
 
@@ -273,6 +206,77 @@ body {
   50% {
     background-position: 400% 0;
   }
+  
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* BOUTON JEU */
+
+#btnJeu {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color:#000;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  margin-left: 3%;
+}
+
+#btnJeu:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+#btnJeu:active {
+  color: #000
+}
+
+#btnJeu:active:after {
+  background: transparent;
+}
+
+#btnJeu:hover:before {
+  opacity: 1;
+}
+
+#btnJeu:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #dbd9d9;
+  left: 0px;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
 
   100% {
     background-position: 0 0;
@@ -285,25 +289,29 @@ body {
   align-items: center;
   justify-items: center;
   margin-bottom: 10%;
+  -webkit-filter: drop-shadow(10px 10px 10px #000000);
+  filter: drop-shadow(10px 10px 10px #000000);
 }
 
 .titre {
-  color: rgb(250, 210, 67);
+  color: rgb(255, 180, 30);
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 1px;
   /* text-transform:uppercase; */
-  width: min-content;
+  width:auto;
   text-align: justify;
   margin: auto;
+  margin-right:auto;
   white-space: nowrap;
   font-family: 'Pokemon Solid', sans-serif;
+  text-shadow: 0.2em 0.2em #333;
   -webkit-text-stroke-width: 2.5px;
-  -webkit-text-stroke-color: rgb(5, 92, 215);
+  -webkit-text-stroke-color: rgb(0, 89, 255);
 }
 
 .titre:before {
-  background-color: #3800c5;
+  background-color: #c50000;
   content: '';
   display: block;
   height: 3px;
@@ -312,14 +320,14 @@ body {
 }
 
 .titre:after {
-  background-color: #3800c5;
+  background-color: #ba64fc;
   content: '';
   display: block;
   position: relative;
-  right: -300px;
+  right: -350px;
   bottom: 0;
   height: 3px;
-  width: 75px;
+  width: 100px;
   margin-bottom: 0.25em;
 }
 

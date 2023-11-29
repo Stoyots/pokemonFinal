@@ -15,8 +15,8 @@
     <img id="logo"
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" />
     <div class="search-bar">
-      <input id="pokemonName" value="" type="text" placeholder="Nom du Pokemon">
-      <button id="search">Rechercher</button>
+      <input id="pokemonName" onclick="document.getElementById('pokemonName').value = ''"type="text" placeholder="Nom du Pokemon">
+      <button id="search">Generer la carte</button>
     </div>
   </header>
 
@@ -28,6 +28,7 @@
           <div class="pokemonImageContainer">
             <img id='imagepokemon' src="" alt="" class="pokemonImage">
           </div>
+          <img id="rickRollImage" src="https://media.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif" alt="Rick Roll" style="display: none;">
           <div class="pokemoninfoContainer">
             <h1 id="namepokemon" class="pokemonInfo"></h1>
             <p id="Number" class="pokemonInfo"></p>
@@ -40,10 +41,9 @@
       </div>
     </div>
   </main>
+  <button id="btnAccueil" onclick="location.href='../Accueil/Accueil.html'">Revenir au menu</button>
 
   <audio id="rickRollAudio" src="rickRoll.mp3" preload="auto"></audio>
-  <img id="rickRollImage" src="https://media.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif" alt="Rick Roll"
-    style="display: none;">
 
   <script src="testPokemon.js"></script>
   <script src="rickRoll.js"></script>

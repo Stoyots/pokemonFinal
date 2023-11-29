@@ -90,3 +90,8 @@ input.addEventListener("keypress", function (event) {
 });
 document.querySelector('#search').addEventListener("click", guessName)
 
+function searchbarClicked() {
+    document.getElementById('searchbox').value = '';
+    }
+    
+

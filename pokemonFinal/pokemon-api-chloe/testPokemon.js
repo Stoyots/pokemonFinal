@@ -128,4 +128,13 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   document.querySelector('#search').addEventListener("click", getPokemon);
+  let input = document.getElementById("pokemonName");
+  input.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      imagePokemon()
+      translateType()
+      imageEnergy()
+      getPokemon()
+    }
+  });
 });
