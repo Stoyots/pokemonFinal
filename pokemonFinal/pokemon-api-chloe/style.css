@@ -203,8 +203,8 @@ main {
   position: absolute;
   bottom: 120%;
   width: auto;
-  height: 14vh;
-  top: -238%;
+  height: 12vh;
+  top: -235%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -233,29 +233,27 @@ main {
   font-style: italic;
   z-index: 1;
   display: inline-block;
-  background-color: #EAEAC3;
   --webkit-background-clip: text;
-  color: transparent;
 }
 
 #namepokemon {
-  top: -21vh;
-  left: -31%;
+  top: -18vh;
+  left: -32%;
 }
 
 #weight {
-  top: -16.0vh;
+  top: -13.4vh;
   left: 8.8%;
 }
 
 #height {
-  top: -32.8vh;
-  left: 32.3%;
+  top: -27.3vh;
+  left: 34%;
 }
 
 #Number {
   position: relative;
-  top: -43.2vh;
+  top: -36.7vh;
   left: 38%;
   font-size: 1.20rem;
   font-style: italic;
@@ -265,7 +263,7 @@ main {
 
 #type {
   position: relative;
-  top: -55.2vh;
+  top: -46.5vh;
   left: -17%;
   z-index: 1;
   transform: scale(0.30);
@@ -276,7 +274,7 @@ main {
   position: absolute;
   bottom: 120%;
   width: auto;
-  height: 22vh;
+  height: 20vh;
   top: -145%;
   transform: translateX(-50%);
   transform: scale(0.30);
