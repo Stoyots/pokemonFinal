@@ -315,3 +315,23 @@ a {
     opacity: 0;
     margin-top: -7vh;
 }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {	
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2fb2821a-1406-4a1d-9b04-6668f278e944/de2soon-f223cb2a-080c-474c-935d-9722f5523503.jpg/v1/fill/w_1192,h_670,q_70,strp/pokemon_swsh___wild_area__night__by_phoenixoflight92_de2soon-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMmZiMjgyMWEtMTQwNi00YTFkLTliMDQtNjY2OGYyNzhlOTQ0XC9kZTJzb29uLWYyMjNjYjJhLTA4MGMtNDc0Yy05MzVkLTk3MjJmNTUyMzUwMy5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.KlPXKOkE_Nz7FwCnPQTbBAQ107h-vyUyzVo9b57uu5A);
+      background-size: cover;
+      margin: 0; /* Add this to remove default body margin */
+      padding: 0; /* Add this to remove default body padding */
+      color: #fff;
+    }
+  
+      :root {
+          --bg: #17181c;
+          --fg: #e3e4e8;
+          --input: #2e3138;
+          --primary: #5583f6;
+      }
+}
