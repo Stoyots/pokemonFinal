@@ -5,11 +5,11 @@ You can choose to do a pokemon quizz, look at the pokedex or look at the differe
 <em>Home Page</em>
 ![image](https://github.com/Stoyots/pokemonFinal/assets/146814463/48983d37-a793-4a94-8f52-7ec7430b7699)
 
-<br>
+
 <em>Pokedex Page</em>
 ![image](https://github.com/Stoyots/pokemonFinal/assets/146814463/ad5b08dd-bef5-4408-ba95-995c84beaf9d)
 
-<br>
+
 <em>Quizz Page</em>
 ![image](https://github.com/Stoyots/pokemonFinal/assets/146814463/2d067791-f6a8-4c46-9056-2ae4ba888716)
 
