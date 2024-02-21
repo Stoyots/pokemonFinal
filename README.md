@@ -21,7 +21,7 @@ You can choose to do a pokemon quizz, look at the pokedex or look at the differe
 <em>An eight-day project</em>
  - 20/11/2023 - Understanding the concept of Api and how to use it in a mob programming session. 
  - 21/11/2023 - Choosing the <a href='https://pokeapi.co/'>Pokemon API</a>. Test of fetching and using data from Api (GET methods). 
- - 22/11/2023 - Choosing a second <a href='https://pokebuildapi.fr/api/v1'>Pokemon API</a> in order to have the Pokemon name in French & Bugs Fixed. 
+ - 22/11/2023 - Choosing to use as well a second <a href='https://pokebuildapi.fr/api/v1'>Pokemon API</a> in order to have the Pokemon name in French & Bugs Fixed. 
  - 23/11/2023 - Adding functionnality such as the input to search for a particular pokemon name or id. 
  - 27/11/2023 - Divided Coding Task in 3 parts : the Pokedex, the Pokemon quizz and the Pokemon Card. 
  - 28/11/2023 - Worked on the different task and the CSS (responsive & dark mode on the pokemon quizz)
