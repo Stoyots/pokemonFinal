@@ -1,8 +1,12 @@
 # Pokemon & Pokedex v.1 - Group Project
 Pokemon and Pokedex is a website that allows you to play and search pokemons anywhere. 
 You can choose to do a pokemon quizz, look at the pokedex or look at the different cards of Pokemon. 
+
+<em>Home Page</em>
 ![image](https://github.com/Stoyots/pokemonFinal/assets/146814463/48983d37-a793-4a94-8f52-7ec7430b7699)
+<em>Pokedex Page</em>
 ![image](https://github.com/Stoyots/pokemonFinal/assets/146814463/ad5b08dd-bef5-4408-ba95-995c84beaf9d)
+<em>Quizz Page</em>
 ![image](https://github.com/Stoyots/pokemonFinal/assets/146814463/2d067791-f6a8-4c46-9056-2ae4ba888716)
 
 ## Stack Tech 
