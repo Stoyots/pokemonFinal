@@ -10,7 +10,7 @@ You can choose to do a pokemon quizz, look at the pokedex or look at the differe
 ![image](https://github.com/Stoyots/pokemonFinal/assets/146814463/ad5b08dd-bef5-4408-ba95-995c84beaf9d)
 
 
-<em>Quizz Page</em>
+<em>Quizz Page (Dark Mode)</em>
 ![image](https://github.com/Stoyots/pokemonFinal/assets/146814463/2d067791-f6a8-4c46-9056-2ae4ba888716)
 
 ## Stack Tech 
@@ -30,6 +30,7 @@ You can choose to do a pokemon quizz, look at the pokedex or look at the differe
 
 ## Project Status
 The Project developpement has stopped for now, however the Pokemon card Front is to be improved.
+Pull request are welcome. For major changes, please open an issue first to discuss what you would like to change. 
 
 ## Author
 <a href='https://github.com/Kushumai'>Clément</a>, <a href='https://github.com/zoeleca'>Zoe</a>, <a href='https://github.com/Stoyots'>Tom</a> AND <a href='https://github.com/JinxedQuinn'>Chloé</a>
